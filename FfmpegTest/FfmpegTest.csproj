@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8120538C-71A6-45D5-ACC3-974DFC6B1572}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{122416d6-6b49-4ee2-a1e8-b825f31c79fe}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FfmpegTest</RootNamespace>
+    <AssemblyName>FfmpegTest</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86;x86_64</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Include="libs\armeabi\libavcodec.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi\libavdevice.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi\libavfilter.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi\libavformat.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi\libavutil.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi\libffmpegjni.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi\libswresample.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi\libswscale.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libavformat.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libavcodec.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libavdevice.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libavfilter.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libavutil.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libffmpegjni.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libswresample.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\armeabi-v7a\libswscale.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86\libavformat.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86\libavcodec.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86\libavdevice.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86\libavfilter.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86\libavutil.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86\libffmpegjni.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86\libswresample.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86\libswscale.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86_64\libavformat.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86_64\libavcodec.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86_64\libavdevice.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86_64\libavfilter.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86_64\libavutil.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86_64\libffmpegjni.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86_64\libswresample.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="libs\x86_64\libswscale.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <None Include="jni\jni\Android.arm.mk" />
+    <None Include="jni\jni\Android.mk" />
+    <None Include="jni\jni\Android.x86.mk" />
+    <None Include="jni\jni\cmdutils.c" />
+    <None Include="jni\jni\cmdutils.h" />
+    <None Include="jni\jni\cmdutils_common_opts.h" />
+    <None Include="jni\jni\config.h" />
+    <None Include="jni\jni\ffmpeg.c" />
+    <None Include="jni\jni\ffmpeg.h" />
+    <None Include="jni\jni\FFmpegJni.c" />
+    <None Include="jni\jni\FFmpegJni.h" />
+    <None Include="jni\jni\ffmpeg_back.c" />
+    <None Include="jni\jni\ffmpeg_filter.c" />
+    <None Include="jni\jni\ffmpeg_opt.c" />
+    <None Include="jni\jni\include\compat\va_copy.h" />
+    <None Include="jni\jni\include\libavcodec\avcodec.h" />
+    <None Include="jni\jni\include\libavcodec\avfft.h" />
+    <None Include="jni\jni\include\libavcodec\d3d11va.h" />
+    <None Include="jni\jni\include\libavcodec\dv_profile.h" />
+    <None Include="jni\jni\include\libavcodec\dxva2.h" />
+    <None Include="jni\jni\include\libavcodec\old_codec_ids.h" />
+    <None Include="jni\jni\include\libavcodec\qsv.h" />
+    <None Include="jni\jni\include\libavcodec\vaapi.h" />
+    <None Include="jni\jni\include\libavcodec\vda.h" />
+    <None Include="jni\jni\include\libavcodec\vdpau.h" />
+    <None Include="jni\jni\include\libavcodec\version.h" />
+    <None Include="jni\jni\include\libavcodec\videotoolbox.h" />
+    <None Include="jni\jni\include\libavcodec\vorbis_parser.h" />
+    <None Include="jni\jni\include\libavcodec\xvmc.h" />
+    <None Include="jni\jni\include\libavdevice\avdevice.h" />
+    <None Include="jni\jni\include\libavdevice\version.h" />
+    <None Include="jni\jni\include\libavfilter\asrc_abuffer.h" />
+    <None Include="jni\jni\include\libavfilter\avcodec.h" />
+    <None Include="jni\jni\include\libavfilter\avfilter.h" />
+    <None Include="jni\jni\include\libavfilter\avfiltergraph.h" />
+    <None Include="jni\jni\include\libavfilter\buffersink.h" />
+    <None Include="jni\jni\include\libavfilter\buffersrc.h" />
+    <None Include="jni\jni\include\libavfilter\version.h" />
+    <None Include="jni\jni\include\libavformat\avformat.h" />
+    <None Include="jni\jni\include\libavformat\avio.h" />
+    <None Include="jni\jni\include\libavformat\ffm.h" />
+    <None Include="jni\jni\include\libavformat\network.h" />
+    <None Include="jni\jni\include\libavformat\os_support.h" />
+    <None Include="jni\jni\include\libavformat\url.h" />
+    <None Include="jni\jni\include\libavformat\version.h" />
+    <None Include="jni\jni\include\libavresample\avresample.h" />
+    <None Include="jni\jni\include\libavresample\version.h" />
+    <None Include="jni\jni\include\libavutil\adler32.h" />
+    <None Include="jni\jni\include\libavutil\aes.h" />
+    <None Include="jni\jni\include\libavutil\attributes.h" />
+    <None Include="jni\jni\include\libavutil\audioconvert.h" />
+    <None Include="jni\jni\include\libavutil\audio_fifo.h" />
+    <None Include="jni\jni\include\libavutil\avassert.h" />
+    <None Include="jni\jni\include\libavutil\avconfig.h" />
+    <None Include="jni\jni\include\libavutil\avstring.h" />
+    <None Include="jni\jni\include\libavutil\avutil.h" />
+    <None Include="jni\jni\include\libavutil\base64.h" />
+    <None Include="jni\jni\include\libavutil\blowfish.h" />
+    <None Include="jni\jni\include\libavutil\bprint.h" />
+    <None Include="jni\jni\include\libavutil\bswap.h" />
+    <None Include="jni\jni\include\libavutil\buffer.h" />
+    <None Include="jni\jni\include\libavutil\camellia.h" />
+    <None Include="jni\jni\include\libavutil\cast5.h" />
+    <None Include="jni\jni\include\libavutil\channel_layout.h" />
+    <None Include="jni\jni\include\libavutil\common.h" />
+    <None Include="jni\jni\include\libavutil\cpu.h" />
+    <None Include="jni\jni\include\libavutil\crc.h" />
+    <None Include="jni\jni\include\libavutil\dict.h" />
+    <None Include="jni\jni\include\libavutil\display.h" />
+    <None Include="jni\jni\include\libavutil\downmix_info.h" />
+    <None Include="jni\jni\include\libavutil\error.h" />
+    <None Include="jni\jni\include\libavutil\eval.h" />
+    <None Include="jni\jni\include\libavutil\ffversion.h" />
+    <None Include="jni\jni\include\libavutil\fifo.h" />
+    <None Include="jni\jni\include\libavutil\file.h" />
+    <None Include="jni\jni\include\libavutil\frame.h" />
+    <None Include="jni\jni\include\libavutil\hash.h" />
+    <None Include="jni\jni\include\libavutil\hmac.h" />
+    <None Include="jni\jni\include\libavutil\imgutils.h" />
+    <None Include="jni\jni\include\libavutil\intfloat.h" />
+    <None Include="jni\jni\include\libavutil\intreadwrite.h" />
+    <None Include="jni\jni\include\libavutil\lfg.h" />
+    <None Include="jni\jni\include\libavutil\libm.h" />
+    <None Include="jni\jni\include\libavutil\log.h" />
+    <None Include="jni\jni\include\libavutil\lzo.h" />
+    <None Include="jni\jni\include\libavutil\macros.h" />
+    <None Include="jni\jni\include\libavutil\mathematics.h" />
+    <None Include="jni\jni\include\libavutil\md5.h" />
+    <None Include="jni\jni\include\libavutil\mem.h" />
+    <None Include="jni\jni\include\libavutil\motion_vector.h" />
+    <None Include="jni\jni\include\libavutil\murmur3.h" />
+    <None Include="jni\jni\include\libavutil\old_pix_fmts.h" />
+    <None Include="jni\jni\include\libavutil\opt.h" />
+    <None Include="jni\jni\include\libavutil\parseutils.h" />
+    <None Include="jni\jni\include\libavutil\pixdesc.h" />
+    <None Include="jni\jni\include\libavutil\pixelutils.h" />
+    <None Include="jni\jni\include\libavutil\pixfmt.h" />
+    <None Include="jni\jni\include\libavutil\random_seed.h" />
+    <None Include="jni\jni\include\libavutil\rational.h" />
+    <None Include="jni\jni\include\libavutil\replaygain.h" />
+    <None Include="jni\jni\include\libavutil\ripemd.h" />
+    <None Include="jni\jni\include\libavutil\samplefmt.h" />
+    <None Include="jni\jni\include\libavutil\sha.h" />
+    <None Include="jni\jni\include\libavutil\sha512.h" />
+    <None Include="jni\jni\include\libavutil\stereo3d.h" />
+    <None Include="jni\jni\include\libavutil\tea.h" />
+    <None Include="jni\jni\include\libavutil\threadmessage.h" />
+    <None Include="jni\jni\include\libavutil\time.h" />
+    <None Include="jni\jni\include\libavutil\timecode.h" />
+    <None Include="jni\jni\include\libavutil\timestamp.h" />
+    <None Include="jni\jni\include\libavutil\twofish.h" />
+    <None Include="jni\jni\include\libavutil\version.h" />
+    <None Include="jni\jni\include\libavutil\xtea.h" />
+    <None Include="jni\jni\include\libpostproc\postprocess.h" />
+    <None Include="jni\jni\include\libpostproc\version.h" />
+    <None Include="jni\jni\include\libswresample\swresample.h" />
+    <None Include="jni\jni\include\libswresample\version.h" />
+    <None Include="jni\jni\include\libswscale\swscale.h" />
+    <None Include="jni\jni\include\libswscale\version.h" />
+    <None Include="jni\jni\include\x264.h" />
+    <None Include="jni\jni\include\x264_config.h" />
+    <None Include="jni\jni\logjni.h" />
+    <None Include="jni\jni\prebuilt\armeabi\libavcodec.so" />
+    <None Include="jni\jni\prebuilt\armeabi\libavdevice.so" />
+    <None Include="jni\jni\prebuilt\armeabi\libavfilter.so" />
+    <None Include="jni\jni\prebuilt\armeabi\libavformat.so" />
+    <None Include="jni\jni\prebuilt\armeabi\libavutil.so" />
+    <None Include="jni\jni\prebuilt\armeabi\libswresample.so" />
+    <None Include="jni\jni\prebuilt\armeabi\libswscale.so" />
+    <None Include="jni\libs\armeabi\libavcodec.so" />
+    <None Include="jni\libs\armeabi\libavdevice.so" />
+    <None Include="jni\libs\armeabi\libavfilter.so" />
+    <None Include="jni\libs\armeabi\libavformat.so" />
+    <None Include="jni\libs\armeabi\libavutil.so" />
+    <None Include="jni\libs\armeabi\libffmpegjni.so" />
+    <None Include="jni\libs\armeabi\libswresample.so" />
+    <None Include="jni\libs\armeabi\libswscale.so" />
+    <None Include="jni\obj\local\armeabi\libavcodec.so" />
+    <None Include="jni\obj\local\armeabi\libavdevice.so" />
+    <None Include="jni\obj\local\armeabi\libavfilter.so" />
+    <None Include="jni\obj\local\armeabi\libavformat.so" />
+    <None Include="jni\obj\local\armeabi\libavutil.so" />
+    <None Include="jni\obj\local\armeabi\libffmpegjni.so" />
+    <None Include="jni\obj\local\armeabi\libswresample.so" />
+    <None Include="jni\obj\local\armeabi\libswscale.so" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\cmdutils.o" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\cmdutils.o.d" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\ffmpeg.o" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\ffmpeg.o.d" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\FFmpegJni.o" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\FFmpegJni.o.d" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\ffmpeg_filter.o" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\ffmpeg_filter.o.d" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\ffmpeg_opt.o" />
+    <None Include="jni\obj\local\armeabi\objs\ffmpegjni\ffmpeg_opt.o.d" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+  -->
+</Project>

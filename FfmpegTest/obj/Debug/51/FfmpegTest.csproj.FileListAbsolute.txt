@@ -1,0 +1,5 @@
+C:\Users\23722\source\repos\FfmpegTest\FfmpegTest\obj\Debug\51\MonoAndroid,Version=v5.1.AssemblyAttributes.cs
+C:\Users\23722\source\repos\FfmpegTest\FfmpegTest\obj\Debug\51\FfmpegTest.nuget.stamp
+C:\Users\23722\source\repos\FfmpegTest\FfmpegTest\obj\Debug\51\FfmpegTest.csprojAssemblyReference.cache
+C:\Users\23722\source\repos\FfmpegTest\FfmpegTest\obj\Debug\51\libraryimports.cache.stamp
+C:\Users\23722\source\repos\FfmpegTest\FfmpegTest\obj\Debug\51\res.flag
